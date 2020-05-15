@@ -12,23 +12,23 @@ board.push_san("Nf6")
 board.is_checkmate()
 board
 
-to make move and unmove 
+#to make move and unmove 
 Nf3 = chess.Move.from_uci("g1f3")
 board.push(Nf3)  
 board.pop() 
 
-to show ascii board 
+#to show ascii board 
 board = chess.Board("r1bqkb1r/pppp1Qpp/2n2n2/4p3/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 0 4")
 print(board)
 
-Detects checkmates
+#Detects checkmates
 board.is_stalemate()
 
 board.is_insufficient_material()
 
 board.is_game_over()
 
-Detects checks and attacks
+#Detects checks and attacks
 
  board.is_check()
 board.is_attacked_by(chess.WHITE, chess.E8)
